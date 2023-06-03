@@ -5,10 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfolio Website</title>
+    <script src="https://kit.fontawesome.com/3969d09e9b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <header>
+        <div class="fixed-section">
+            <div class="content">
+                <h4>PHONE 
+                </h4>
+                <p class="contact-info">123-456-7890</p>
+                <h4>EMAIL</h4>
+                <p class="contact-info">correo@example.com</p>
+                <h4>SOCIAL NETWORK</h4>
+                <div class="social-buttons">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram  fa-xl" style="color:#ffff"></i></a>
+                    <a href="https://telegram.org" target="_blank"><i class="fa-brands fa-github  fa-xl" style="color:#ffff"></i></a>
+                    <a href="https://www.behance.net" target="_blank"><i class="fa-brands fa-square-behance fa-xl" style="color:#ffff"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin  fa-xl" style="color:#ffff"></i></a>
+                </div>
+            </div>
+        </div>
         <nav>
             <div class="logo">
               <img src="ruta-a-tu-isologotipo.png" alt="">
@@ -24,16 +41,73 @@
           </nav>
     </header>
 
-<section>
-    <div>
-        <img src="" alt="">
+<section class="banner">
+    <div class="bannerimg">
+        <img src="img/heroimg.png" alt="" >
     </div>
-    <div>
+    <div class="bannertitle">
         <h2>CHAVEZ MIRANDA FREDY</h2>
         <h3>WEB DESIGNER</h3>
         <P>I'm Fredy Chavez, web designer with 1 year experience.</P>
-        <button>PROJECT COST</button>
+        <button class="btncost">PROJECT COST</button>
     </div>
 </section>
+
+<main>
+    <section id="portfolio">
+        <div class="container">
+        <h2>PORTFOLIO</h2>
+        <div class="pcontainer">
+            <div class="card-container">
+                <div class="card">
+                  <div class="card-content">
+                    <img src="img/card1.png" alt="Imagen del proyecto">
+                    <div class="overlay">
+                      <p>cliente: cliente x</p>
+                      <p>año: 2019</p>
+                      <h4>Título del proyecto</h4>
+                      <a href="#" class="arrow-link"></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                      <img src="img/card1.png" alt="Imagen del proyecto">
+                      <div class="overlay">
+                        <h4>Título del proyecto</h4>
+                        <a href="#" class="arrow-link"></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-content">
+                      <img src="img/card1.png" alt="Imagen del proyecto">
+                      <div class="overlay">
+                        <h4>Título del proyecto</h4>
+                        <a href="#" class="arrow-link"></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-content">
+                      <img src="img/card1.png" alt="Imagen del proyecto">
+                      <div class="overlay">
+
+                        <h4>Título del proyecto </h4> <a href="#" class="arrow-link"></a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+                <!-- Repite la estructura de las otras 3 cards -->
+              </div>
+              
+        </div>
+    </div>
+    </section>
+</main>
 </body>
 </html>

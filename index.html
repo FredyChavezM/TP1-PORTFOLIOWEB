@@ -7,6 +7,7 @@
     <title>Porfolio Website</title>
     <script src="https://kit.fontawesome.com/3969d09e9b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilos.css">
+    <script src="js.js"></script>
 </head>
 <body>
     <header>
@@ -26,17 +27,17 @@
                 </div>
             </div>
         </div>
-        <nav>
+        <nav id="navbar">
             <div class="logo">
               <img src="ruta-a-tu-isologotipo.png" alt="">
               <span>MIRANDA</span>
             </div>
 
             <ul class="nav-links">
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
     </header>
@@ -53,7 +54,7 @@
     </div>
 </section>
 
-<main>
+<main id="change">
     <section id="portfolio">
         <div class="container">
         <h2>PORTFOLIO</h2>
@@ -63,10 +64,14 @@
                   <div class="card-content">
                     <img src="img/card1.png" alt="Imagen del proyecto">
                     <div class="overlay">
-                      <p>cliente: cliente x</p>
-                      <p>año: 2019</p>
+                        <div class="clientyear">
+                            <p>client: nombre</p>
+                            <p>year: 2019</p>
+                        </div>
+                      <div class="cardtitle">
                       <h4>Título del proyecto</h4>
                       <a href="#" class="arrow-link"></a>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -102,12 +107,81 @@
                     </div>
                   </div>
                 
-                <!-- Repite la estructura de las otras 3 cards -->
               </div>
-              
+              <button class="btncost">MORE PROJECT</button>
+
         </div>
     </div>
     </section>
 </main>
+
+    <section id="about">
+        <div class="container">
+            <h2>ABOUT</h2>
+            <P>I'm Fredy Chavez Miranda, web designer with 1 year experience. I'm 26 years old. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat praesentium repudiandae adipisci vero delectus perferendis labore deserunt velit, debitis reiciendis molestias qui ad aliquam obcaecati unde error perspiciatis? Nesciunt?</P> 
+            <br/>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur exercitationem minima delectus voluptate natus, similique error labore ipsam rerum voluptatibus repellendus sit sapiente accusantium dolorem hic cupiditate repellat ratione provident.</p>
+
+        <div class="personalinfo">
+            <div class="education">
+                <h3>EDUCATION</h3>
+                <div>
+                    <h4>INTRODUCTION TO PYTHON</h4>
+                    <h5>COURSE AT IITBA</h5>
+                    <p>Year: August 2022</p>
+                </div>
+                <div>
+                    <h4>GRAPHIC DESIGN</h4>
+                    <h5>ESCUELA DA VINCI</h5>
+                    <p>Year: 2021 - 2022</p>
+                </div>
+            </div>
+            <div class="skills">
+                <H3>SKILLS</H3>
+                <div>
+                    <ul>
+                        <li>
+                          HTML
+                          <progress value="85" max="100"></progress>
+                        </li>
+                        <li>
+                          CSS
+                          <progress value="80" max="100"></progress>
+                        </li>
+                        <li>
+                          JAVASCRIPT
+                          <progress value="45" max="100"></progress>
+                        </li>
+                        <li>
+                            BOOTSTRAP
+                            <progress value="80" max="100"></progress>
+                        </li>
+                        <li>
+                            PYTHON
+                            <progress value="50" max="100"></progress>
+                        </li>
+                        <li>
+                            FIGMA
+                             <progress value="80" max="100"></progress>
+                         </li>
+                        <li>
+                            ILLUSTRATOR
+                            <progress value="90" max="100"></progress>
+                        </li>
+                        <li>
+                           PHOTOSHOP
+                            <progress value="90" max="100"></progress>
+                        </li>
+                      </ul>
+                      
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </section>
+
+
 </body>
 </html>

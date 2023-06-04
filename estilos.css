@@ -62,20 +62,25 @@ body {
 
 header{
     position: fixed;
-    top: 0;
-    left: 0;
+    z-index: 1;
     width: 100%;
     background-color: transparent;
     
 }
 
-nav {
+#navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2em 4rem;
-  background: linear-gradient(to right, #e7814b 20%, transparent 20%);
+  background: linear-gradient(to right, #e7814b 40%, white 40%);
   background-position: left;
+  
+}
+
+#navbar.next {
+  background: linear-gradient(to right, #e7814b 25%, white 25%);
+  transition: 1s;
 }
 
 .logo {
@@ -151,9 +156,10 @@ h2 {
 .btncost{
   color:white;
   background-color: #e7814b;
+  font: BOLD;
   padding:1rem 2rem;
   border: none;
-  margin:2rem 0 
+  margin:2rem auto
 }
 
 .bannertitle h3{
@@ -181,7 +187,8 @@ p{
 
 
 #portfolio{
-  padding-left:30vw
+  padding-left:30vw;
+  padding-top:8rem
 }
 
 .container{
@@ -197,8 +204,8 @@ p{
 
 .card {
   width: 30vw;
-  background-color: #f2f2f2;
-  position: relative;
+    background-color: #f2f2f2;
+    position: relative;
 }
 
 .card-content {
@@ -244,4 +251,86 @@ p{
 .arrow-link::after {
   content: "\2192";
   margin-left: 5px;
+}
+
+.clientyear{
+  display: flex;
+  justify-content: space-between;
+  padding:0 20px
+
+}
+
+.cardtitle{
+  display: flex;
+}
+
+.pcontainer .btncost{
+  display: block;
+}
+
+/* sección about */
+#about{
+  padding-left:30vw;
+  padding-top:5rem;
+  scroll-margin-top: 50px;
+}
+
+#about:target ~ .navbar {
+  background: linear-gradient(to right, #e7814b 20%, white 20%);
+}
+
+
+progress {
+  width: 200px;
+  height: 7px;
+  margin-left:30px;
+  border-radius: 0;
+  align-content: center;
+  
+}
+
+/* barra de skills */
+progress::-webkit-progress-bar {
+  background-color: #fae4d8;
+}
+
+progress::-webkit-progress-value {
+  background-color: #e7814b;
+}
+
+.skills ul{
+  list-style: none;
+  
+}
+
+.skills ul li{
+  margin-bottom:1rem;
+  display:flex;
+  justify-content: space-between;
+}
+
+.personalinfo{
+  display: flex;
+  margin-top:4rem
+}
+
+.personalinfo h3{
+  font-size: 2.5rem;
+  margin-bottom:2rem
+}
+
+.education div{
+  border: .5px solid rgb(228, 227, 227);
+  padding: 2rem 1.5rem;
+  width:350px;
+  text-align: left;
+  margin-bottom:2rem;
+}
+
+.education div h4{
+  margin-bottom:1rem
+}
+
+.skills{
+  margin-left:5rem
 }

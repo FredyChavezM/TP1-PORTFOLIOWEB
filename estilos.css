@@ -12,6 +12,11 @@ body {
   font-family: "Geologica", sans-serif;
 }
 
+p{
+  font-size: 1.1em;
+  font-weight: lighter;
+}
+
 /* CONTACTO FIJO LATERAL */
 .fixed-section {
   position: fixed;
@@ -150,7 +155,7 @@ header{
 
 h2 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 4.5rem;
 }
 
 .btncost{
@@ -173,10 +178,6 @@ h2 {
   width:30vw;
 }
 
-p{
-  font-weight: lighter;
-  font-size: 1rem;
-}
 
 .btncost:hover{
   background-color: #6b2a07;
@@ -272,7 +273,6 @@ p{
 #about{
   padding-left:30vw;
   padding-top:5rem;
-  scroll-margin-top: 50px;
 }
 
 #about:target ~ .navbar {
@@ -328,9 +328,112 @@ progress::-webkit-progress-value {
 }
 
 .education div h4{
-  margin-bottom:1rem
+  margin-bottom:1rem;
+  
+  font-size: 1.2rem;
+}
+
+.education div h5{
+  margin-bottom:.3rem;
+  color: rgb(87, 87, 87);
+  font-size: 1.05rem;
+  font-weight: normal;
 }
 
 .skills{
   margin-left:5rem
+}
+
+
+
+/* SECCIÓN SERVICES */
+
+#services{
+  padding-left:30vw;
+  padding-top:5rem;
+}
+
+#services .card-container {
+  display: flex;
+  column-gap: 2rem;
+  
+}
+
+#services .card {
+  display: flex;
+  width: 350px;
+  margin-bottom: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 1.2px solid rgba(150, 150, 150, 0.178);
+  align-items: center;
+  padding:3rem 1rem
+}
+
+#services p {
+  color: #888888;
+  letter-spacing: 1px;
+  margin-top:1rem
+}
+
+
+#services .card:hover {
+  box-shadow: 0 20px 20px rgba(43, 42, 42, 0.1); /* Efecto de sombra al hacer hover */
+}
+
+/* seccion contacto */
+
+#contact{
+  padding-left:30vw;
+  padding-top:5rem;
+  display: flex;
+  background: linear-gradient(to right, #e7814b 40%, white 40%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  height:90vh;
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: #2a1910;
+  color:white;
+  padding:2rem
+}
+
+.form-group {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: white;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  color: white;
+}
+
+button[type="submit"] {
+  background-color: #e7814b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+textarea{
+  height:10em
+}
+
+::placeholder {
+  color: #a39d99;
+  font-size: 1.1rem;
 }

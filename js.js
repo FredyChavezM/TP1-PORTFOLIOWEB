@@ -12,16 +12,16 @@ window.addEventListener("scroll", function() {
     }
   });
   
-*/
+*/window.addEventListener("scroll", function() {
+  var navbar = document.getElementById("navbar");
+  var nextSection = document.getElementById("change");
+  var nextSectionOffset = nextSection.offsetTop;
+  var contactSection = document.getElementById("contact");
+  var contactSectionOffset = contactSection.offsetTop;
 
-  window.addEventListener("scroll", function() {
-    var navbar = document.getElementById("navbar");
-    var nextSection = document.getElementsByClassName("change");
-    var nextSectionOffset = nextSection.offsetTop;
-  
-    if (window.pageYOffset >= nextSectionOffset) {
-      navbar.classList.add("next");
-    } else {
-      navbar.classList.remove("next");
-    }
-  });
+  if (window.pageYOffset >= nextSectionOffset && window.pageYOffset < contactSectionOffset) {
+    navbar.classList.add("next");
+  } else {
+    navbar.classList.remove("next");
+  }
+});

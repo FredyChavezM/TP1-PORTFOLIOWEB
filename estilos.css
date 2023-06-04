@@ -383,10 +383,16 @@ progress::-webkit-progress-value {
 /* seccion contacto */
 
 #contact{
-  padding-left:30vw;
+  padding-left:20vw;
   padding-top:5rem;
-  display: flex;
+  margin-top:2rem;
   background: linear-gradient(to right, #e7814b 40%, white 40%);
+}
+
+
+#contact .container{
+  display: flex;
+  column-gap: 4rem;
 }
 
 form {
@@ -436,4 +442,15 @@ textarea{
 ::placeholder {
   color: #a39d99;
   font-size: 1.1rem;
+}
+
+.contactinfo div{
+  border: 1.2px solid rgba(150, 150, 150, 0.178);
+  padding:1.5rem;
+  width:25vw;
+  margin-bottom:1.5em;
+}
+
+.contactinfo div p{
+  padding:1rem 0
 }

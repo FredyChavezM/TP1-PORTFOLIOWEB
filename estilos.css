@@ -205,14 +205,15 @@ h2 {
 
 .card {
   width: 30vw;
-    background-color: #f2f2f2;
-    position: relative;
+  background-color: #f2f2f2;
+  position: relative;
+  padding:.5rem
 }
 
 .card-content {
   position: relative;
   overflow: hidden;
-  padding:2em
+  padding:3em 2em
 }
 
 .card-content img {
@@ -226,7 +227,7 @@ h2 {
   left: 0;
   width: 100%;
   color: black;
-  padding: 1rem;
+  padding: 0 2rem;
   opacity: 0;
   transition: opacity 0.3s ease;
   display: block;
@@ -236,33 +237,39 @@ h2 {
   opacity: 1;
 }
 
+.card:hover{
+  background-color: white;
+}
+
 .overlay h4 {
-  margin: auto;
   font-size: 1.2rem;
 }
 
 .arrow-link {
   color: black;
-  display: inline-flex;
-  align-items: center;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .arrow-link::after {
   content: "\2192";
-  margin-left: 5px;
 }
 
 .clientyear{
   display: flex;
   justify-content: space-between;
-  padding:0 20px
+  padding:0 1rem 0 0;
+  margin: 0 0 5px 0;
+  font-size: .9rem;
+  font-weight: bold;
 
 }
 
 .cardtitle{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 1rem 0 0;
 }
 
 .pcontainer .btncost{
@@ -275,11 +282,9 @@ h2 {
   padding-top:5rem;
 }
 
-#about:target ~ .navbar {
-  background: linear-gradient(to right, #e7814b 20%, white 20%);
-}
 
 
+/* barra de skills */
 progress {
   width: 200px;
   height: 7px;
@@ -289,7 +294,6 @@ progress {
   
 }
 
-/* barra de skills */
 progress::-webkit-progress-bar {
   background-color: #fae4d8;
 }
@@ -385,7 +389,7 @@ progress::-webkit-progress-value {
 #contact{
   padding-left:20vw;
   padding-top:5rem;
-  margin-top:2rem;
+  margin-top:3rem;
   background: linear-gradient(to right, #e7814b 40%, white 40%);
 }
 
@@ -398,18 +402,24 @@ progress::-webkit-progress-value {
 form {
   display: flex;
   flex-direction: column;
-  height:90vh;
-  max-width: 450px;
+  height:100vh;
+  width: 30vw;
   margin: 0 auto;
   background-color: #2a1910;
   color:white;
-  padding:2rem
+  padding:2rem;
+  align-content: center;
 }
 
 .form-group {
   margin-bottom: 20px;
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
+}
+
+form h3{
+  margin-bottom:3.5rem;
+  font-size:2rem
 }
 
 label {
@@ -433,6 +443,9 @@ button[type="submit"] {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  height:70px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 textarea{
@@ -446,11 +459,11 @@ textarea{
 
 .contactinfo div{
   border: 1.2px solid rgba(150, 150, 150, 0.178);
-  padding:1.5rem;
+  padding:1rem;
   width:25vw;
   margin-bottom:1.5em;
 }
 
 .contactinfo div p{
-  padding:1rem 0
+  padding:.5rem 0
 }

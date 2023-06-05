@@ -19,7 +19,7 @@ window.addEventListener("scroll", function() {
   var contactSection = document.getElementById("contact");
   var contactSectionOffset = contactSection.offsetTop;
 
-  if (window.pageYOffset >= nextSectionOffset && window.pageYOffset < contactSectionOffset) {
+  if (window.pageYOffset > nextSectionOffset && window.pageYOffset < contactSectionOffset) {
     navbar.classList.add("next");
   } else {
     navbar.classList.remove("next");

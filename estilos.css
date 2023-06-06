@@ -10,6 +10,7 @@ body {
   background: linear-gradient(to right, #e7814b 25%, white 25%);
   background-position: left;
   font-family: "Geologica", sans-serif;
+  width:100%;
 }
 
 p{
@@ -29,6 +30,7 @@ p{
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
+  font-size: 1rem;
 
 }
 
@@ -62,6 +64,34 @@ p{
   margin: 10px;
   text-align: center;
 }
+
+/*PUNTOS QUE INDICAN LA SECCIÓN EN LA QUE ESTOY */
+
+.section-indicator {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgb(253, 217, 174);
+  margin-bottom: 10px;
+}
+
+.active-dot {
+  background-color: rgb(204, 114, 4);
+}
+
+
 
 /* NAVBAR */
 
@@ -138,6 +168,7 @@ header{
   padding-left:150px;
   background: linear-gradient(to right, #e7814b 40%, white 40%);
   background-position: left;
+ 
 }
 
 .bannerimg {
@@ -189,11 +220,12 @@ h2 {
 
 #portfolio{
   padding-left:30vw;
-  padding-top:8rem
+  padding-top:8rem;
+  margin:auto;
 }
 
 .container{
-  padding:2em;
+  padding:3rem;
 }
 
 
@@ -278,10 +310,13 @@ h2 {
 
 /* sección about */
 #about{
-  padding-left:30vw;
-  padding-top:5rem;
+  padding:5rem 2rem 0 30vw
 }
 
+.year{
+  color: #a39d99;
+  font-style: italic;
+}
 
 
 /* barra de skills */
@@ -360,17 +395,16 @@ progress::-webkit-progress-value {
 #services .card-container {
   display: flex;
   column-gap: 2rem;
-  
 }
 
 #services .card {
   display: flex;
-  width: 350px;
+  width: 25vw;
   margin-bottom: 20px;
   background-color: rgb(255, 255, 255);
   border: 1.2px solid rgba(150, 150, 150, 0.178);
   align-items: center;
-  padding:3rem 1rem
+  padding:3rem 1rem;
 }
 
 #services p {
@@ -467,3 +501,162 @@ textarea{
 .contactinfo div p{
   padding:.5rem 0
 }
+
+/*------------RESPONSIVE TABLET ----------------*/
+
+@media all and (max-width: 1200px) { 
+ 
+
+body{
+  background: linear-gradient(to right, #e7814b 22%, white 22%);
+}
+
+#navbar.next {
+  background: linear-gradient(to right, #e7814b 22%, white 22%);
+  transition: 1s;
+}
+
+
+/* contacto fijo lateral*/
+.contcontact{
+  display:none
+}
+
+.fixed-section{
+  width:13vw;
+  height:90vh;
+  margin:auto;
+}
+
+.social-buttons a {
+  height:4rem;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+/*hero */
+
+.banner {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 110vh;
+  width:100%;
+  margin:auto;
+  padding:0;
+  background: linear-gradient(to right, #e7814b 40%, white 40%);
+  background-position: left;
+}
+
+.bannerimg {
+  margin:0
+}
+
+h2{
+  margin-bottom: 2rem;
+}
+
+.bannertitle{
+  padding:2rem;
+  width:30%;
+}
+
+.container{
+  padding:20px;
+  width:100%
+}
+
+
+#portfolio{
+  padding:8rem auto;
+  margin:auto;
+
+}
+
+
+
+.personalinfo{
+  display: flex;
+  flex-direction: column;
+  margin-top:4rem
+}
+
+
+#about{
+ margin:auto;
+ text-align: justify;
+}
+
+.education div, .skills{
+ margin:2rem 0;
+}
+
+
+
+progress {
+  width: 50%;
+  margin-left:10px;
+  border-radius: 0;
+  align-content: center;
+  
+}
+
+
+#services .card-container {
+  display: flex;
+  column-gap: 1rem;
+  margin: auto;
+  padding: 0;
+}
+
+
+#services .card {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 1.2px solid rgba(150, 150, 150, 0.178);
+  align-items: center;
+  padding:3rem 1rem
+}
+
+}
+
+
+@media all and (max-width: 780px) { 
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #services .card-container {
+    display: flex;
+    flex-direction: column;
+    column-gap: 1rem;
+    margin: auto;
+    padding: 0;
+  }
+
+  #services .card {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin:1rem 0;
+    background-color: rgb(255, 255, 255);
+    border: 1.2px solid rgba(150, 150, 150, 0.178);
+    align-items: center;
+    padding:3rem 1rem
+  }
+
+ }
+
+
+
+
+
+
+
+

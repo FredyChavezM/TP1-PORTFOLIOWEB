@@ -46,11 +46,20 @@
           </div>
         </div>
       </div>
+
+
+
       <nav id="navbar">
         <div class="logo">
-          <img src="ruta-a-tu-isologotipo.png" alt="" />
-          <span>MIRANDA</span>
+          <img src="img/logo.png" alt="" />
+          <span>FREDY</span>
         </div>
+
+        <div class="menu-icon" >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
 
         <ul class="nav-links">
           <li><a href="#portfolio">Portfolio</a></li>
@@ -73,7 +82,12 @@
 
     <section class="banner">
       <div class="bannerimg">
-        <img src="img/heroimg.jpg" alt="" />
+        <picture>
+            <source srcset="img/heroimg.jpg" media="(min-width: 1200px)">
+            <source srcset="img/heroimg800.jpg" media="(min-width: 768px)">
+            <source srcset="img/heroimg500.jpg" media="(min-width: 576px)">
+            <img src="img/heroimg.jpg" alt="Imagen" />
+          </picture>
       </div>
       <div class="bannertitle">
         <h2>CHAVEZ MIRANDA FREDY</h2>
@@ -91,14 +105,19 @@
             <div class="card-container">
               <div class="card">
                 <div class="card-content">
-                  <img src="img/valkiria.jpg" alt="Imagen del proyecto" />
+                    <picture>
+                        <source srcset="img/valkiria.jpg" media="(min-width: 1200px)">
+                        <source srcset="img/valkiria800.jpg" media="(max-width: 1199px)">
+                        <source srcset="imagen-small.jpg" media="(min-width: 576px)">
+                        <img src="imagen-default.jpg" alt="Imagen" />
+                      </picture>
                   <div class="overlay">
                     <div class="clientyear">
-                      <p>Client: valkriastore</p>
+                      <p>Client: MANGA STORE</p>
                       <p>Year: 2019</p>
                     </div>
                     <div class="cardtitle">
-                      <h4>VALKIRIA MANGA STORE</h4>
+                      <h4>VALKIRIA STORE</h4>
                       <i
                         class="fa-sharp fa-solid fa-arrow-right-long fa-lg"
                       ></i>
@@ -109,10 +128,15 @@
 
               <div class="card">
                 <div class="card-content">
-                  <img src="img/sidney.jpg" alt="Imagen del proyecto" />
+                    <picture>
+                        <source srcset="img/sidney.jpg" media="(min-width: 1200px)">
+                        <source srcset="img/sidney800.jpg" media="(max-width: 1199px)">
+                        <source srcset="imagen-small.jpg" media="(min-width: 576px)">
+                        <img src="imagen-default.jpg" alt="Imagen" />
+                      </picture>
                   <div class="overlay">
                     <div class="clientyear">
-                      <p>Client: CITY OF SIDNEY</p>
+                      <p>Client: SIDNEY</p>
                       <p>Year: 2019</p>
                     </div>
                     <div class="cardtitle">
@@ -127,7 +151,12 @@
 
               <div class="card">
                 <div class="card-content">
-                  <img src="img/lark.jpg" alt="Imagen del proyecto" />
+                    <picture>
+                        <source srcset="img/lark.jpg" media="(min-width: 1200px)">
+                        <source srcset="img/lark800.jpg" media="(max-width: 1199px)">
+                        <source srcset="imagen-small.jpg" media="(min-width: 576px)">
+                        <img src="imagen-default.jpg" alt="Imagen" />
+                      </picture>
                   <div class="overlay">
                     <div class="clientyear">
                       <p>Client: LARK HOMES</p>
@@ -145,7 +174,12 @@
 
               <div class="card">
                 <div class="card-content">
-                  <img src="img/gifty.jpg" alt="Imagen del proyecto" />
+                    <picture>
+                        <source srcset="img/gifty.jpg" media="(min-width: 1200px)">
+                        <source srcset="img/gifty800.jpg" media="(max-width: 1199px)">
+                        <source srcset="imagen-small.jpg" media="(min-width: 576px)">
+                        <img src="imagen-default.jpg" alt="Imagen" />
+                      </picture>
                   <div class="overlay">
                     <div class="clientyear">
                       <p>Client: GIFTIFY</p>
